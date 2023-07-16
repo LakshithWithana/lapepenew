@@ -19,9 +19,9 @@ class MyApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (context, child) {
         return MaterialApp(
-          title: 'La Pepe',
+          title: 'Le Pepe',
           theme: ThemeData(
-            textTheme: GoogleFonts.pangolinTextTheme(),
+            textTheme: GoogleFonts.montserratTextTheme(),
             colorScheme: ColorScheme.fromSeed(seedColor: mainColor),
             useMaterial3: true,
           ),

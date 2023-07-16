@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:lapepenew/shared/colors.dart';
 import 'package:lapepenew/shared/custom_text.dart';
 
@@ -75,35 +76,35 @@ class _DesktopHomeState extends State<DesktopHome> {
                   image: "assets/images/char.png",
                   subtitle: "The Promise of Cryptocurrency",
                   text:
-                      'La Pepe, known for its mischievous and lighthearted nature, had always been an observer of the world. It hopped from one digital realm to another, entertaining and bringing joy to millions. However, the emergence of cryptocurrency had sparked a deep longing within the La Pepe community for financial empowerment and independence.',
+                      'Le Pepe, known for its mischievous and lighthearted nature, had always been an observer of the world. It hopped from one digital realm to another, entertaining and bringing joy to millions. However, the emergence of cryptocurrency had sparked a deep longing within the Le Pepe community for financial empowerment and independence.',
                 ),
                 SinglePost(
                   opacity: pageIndex == 1 ? 1 : 0,
                   image: "assets/images/ch1.png",
                   subtitle: "The Rise of Centralization",
                   text:
-                      "As news spread about the potential of cryptocurrency to revolutionize the global economy, La Pepe couldn't help but dream of a world where its digital talents and wit could be rewarded. It yearned for the opportunity to rise above its humble origins and embrace a future where its creativity could be monetized.\n\nBut as time passed, La Pepe's excitement turned to disappointment. The promise of cryptocurrency seemed to be slipping away, replaced by a system dominated by powerful individuals and corporations. La Pepe watched helplessly as these entities consolidated wealth and influence, leaving the masses struggling to make ends meet.",
+                      "As news spread about the potential of cryptocurrency to revolutionize the global economy, Le Pepe couldn't help but dream of a world where its digital talents and wit could be rewarded. It yearned for the opportunity to rise above its humble origins and embrace a future where its creativity could be monetized.\n\nBut as time passed, Le Pepe's excitement turned to disappointment. The promise of cryptocurrency seemed to be slipping away, replaced by a system dominated by powerful individuals and corporations. Le Pepe watched helplessly as these entities consolidated wealth and influence, leaving the masses struggling to make ends meet.",
                 ),
                 SinglePost(
                   opacity: pageIndex == 2 ? 1 : 0,
                   image: "assets/images/ch2.png",
                   subtitle: "Financial Inclusivity and Empowerment",
                   text:
-                      "The anger within the La Pepe community grew with each passing day. It saw the injustices plaguing its society: the ever-widening wealth gap, the rampant corruption, and the disregard for individual rights. It became clear to La Pepe that its dreams of financial liberation had been manipulated and twisted, leaving it on the fringes of the very revolution it had hoped to embrace.\n\nIn the heart of France, a nation renowned for its long history of revolution, La Pepe made its decision. It shed its playful demeanor and took to the streets, driven by a burning desire for justice. Its animated protests, fueled by frustration and disappointment, became a sight to behold.",
+                      "The anger within the Le Pepe community grew with each passing day. It saw the injustices plaguing its society: the ever-widening wealth gap, the rampant corruption, and the disregard for individual rights. It became clear to Le Pepe that its dreams of financial liberation had been manipulated and twisted, leaving it on the fringes of the very revolution it had hoped to embrace.\n\nIn the heart of France, a nation renowned for its long history of revolution, Le Pepe made its decision. It shed its playful demeanor and took to the streets, driven by a burning desire for justice. Its animated protests, fueled by frustration and disappointment, became a sight to behold.",
                 ),
                 SinglePost(
                   opacity: pageIndex == 3 ? 1 : 0,
                   image: "assets/images/ch3.png",
                   subtitle: "The Role of Community and Collective Action",
                   text:
-                      "Through its creative and subversive acts, La Pepe channeled its anger and demanded change. Its iconic green visage appeared on protest signs and graffiti adorning the walls of Paris. The once-muted croak of La Pepe turned into powerful chants, reverberating through the streets, as it demanded transparency, equal opportunities, and a redistribution of power.\n\nAs the story of La Pepe's uprising began to unfold, the world watched in awe and fascination. The movement sparked conversations about the importance of financial inclusivity and the power of community-driven economies. La Pepe had become the unlikely champion of a cause that extended far beyond its amphibian origins.",
+                      "Through its creative and subversive acts, Le Pepe channeled its anger and demanded change. Its iconic green visage appeared on protest signs and graffiti adorning the walls of Paris. The once-muted croak of Le Pepe turned into powerful chants, reverberating through the streets, as it demanded transparency, equal opportunities, and a redistribution of power.\n\nAs the story of Le Pepe's uprising began to unfold, the world watched in awe and fascination. The movement sparked conversations about the importance of financial inclusivity and the power of community-driven economies. Le Pepe had become the unlikely champion of a cause that extended far beyond its amphibian origins.",
                 ),
                 SinglePost(
                   opacity: pageIndex == 4 ? 1 : 0,
                   image: "assets/images/ch4.png",
                   subtitle: "Redefining the Future of Finance!",
                   text:
-                      "And so, the journey of La Pepe had just begun. With its love for cryptocurrency as one of the driving forces behind its discontent, it hoped to reshape the landscape of finance and society, proving that even the most unexpected individuals could inspire change and challenge the status quo.",
+                      "And so, the journey of Le Pepe had just begun. With its love for cryptocurrency as one of the driving forces behind its discontent, it hoped to reshape the landscape of finance and society, proving that even the most unexpected individuals could inspire change and challenge the status quo.",
                 ),
                 SinglePost(
                   opacity: pageIndex == 5 ? 1 : 0,
@@ -306,8 +307,8 @@ class SinglePost extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Container(
-            color: Colors.black87,
+          SizedBox(
+            // color: Colors.black87,
             width: 520.0.w,
             height: 600.0.h,
             child: Padding(
@@ -316,16 +317,27 @@ class SinglePost extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  CustomText(
-                    text: subtitle,
-                    fontSize: 32.h,
-                    fontWeight: FontWeight.w700,
-                    color: secondaryColor,
+                  // CustomText(
+                  //   text: subtitle,
+                  //   fontSize: 32.h,
+                  //   fontWeight: FontWeight.w700,
+                  //   color: secondaryColor,
+                  // ),
+                  Text(
+                    subtitle.toUpperCase(),
+                    style: GoogleFonts.lilitaOne(
+                        color: white,
+                        fontSize: 56.0.h,
+                        // fontWeight: FontWeight.bold,
+                        decorationColor: white,
+                        textStyle:
+                            const TextStyle(height: 0.8, wordSpacing: 3)),
                   ),
                   const SizedBox(height: 40.0),
+
                   CustomText(
                     text: text,
-                    fontSize: 18.0.sp,
+                    fontSize: 14.0.sp,
                     textAlignment: TextAlign.justify,
                     color: white,
                   ),
